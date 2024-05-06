@@ -15,6 +15,7 @@ public class Main {
             if(cnt == true){
                 System.out.print(i+" ");
             }
+            cnt = true;
         }
     }
 }
