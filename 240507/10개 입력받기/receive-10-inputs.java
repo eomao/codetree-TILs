@@ -15,6 +15,9 @@ public class Main {
             }
             sum += n;
             cnt++;
+            if(n == 9){
+                System.out.printf("%d %.1f", sum, (double)sum/cnt);
+            }
         }
     }
 }
