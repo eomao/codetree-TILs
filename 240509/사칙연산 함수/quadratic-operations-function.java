@@ -27,16 +27,19 @@ public class Main {
 
         if(o.equals("+")){
             result = plus(a, c);
+            System.out.print(a+" "+o+" "+c+" = "+result);
         }else if(o.equals("-")){
             result = min(a, c);
+            System.out.print(a+" "+o+" "+c+" = "+result);
         }else if(o.equals("/")){
             result = div(a, c);
+            System.out.print(a+" "+o+" "+c+" = "+result);
         }else if(o.equals("*")){
             result = mul(a, c);
+            System.out.print(a+" "+o+" "+c+" = "+result);
         }else{
             System.out.print("False");
         }
-        System.out.print(a+" "+o+" "+c+" = "+result);
     }
     
 }
