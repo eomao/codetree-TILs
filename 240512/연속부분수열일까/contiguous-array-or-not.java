@@ -7,6 +7,7 @@ public class Main {
         int n2 = sc.nextInt();
         int[] arr1 = new int[n1];
         int[] arr2 = new int[n2];
+        boolean real = false;
 
         for(int i = 0; i < n1; i++){
             arr1[i] = sc.nextInt();
@@ -19,16 +20,20 @@ public class Main {
             if(arr1[k] == arr2[0]){
                 for(int l = 0; l < n2; l++){
                     if(arr1[k+l] != arr2[l]){
-                        System.out.print("No");
+                        real = false;
                         break;
                     }else if(l == n2-1){
-                        System.out.print("Yes");
+                        real = true;
                     }
                 }
-                break;
             }else if(k == n1-1){
-                System.out.print("No");
+                real = false;
             }
+        }
+        if(real == true){
+            System.out.print("Yes");
+        }else{
+            System.out.print("No");
         }
     }
 }
