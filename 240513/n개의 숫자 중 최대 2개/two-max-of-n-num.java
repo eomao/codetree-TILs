@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        int max = -10000, scmax = -10000;
+        int max = -2147483648, scmax = -2147483648;
 
         for(int i = 0; i < n; i++){
             arr[i] = sc.nextInt();
