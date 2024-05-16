@@ -26,7 +26,7 @@ public class Main {
 
         boolean isOk = false;
 
-        while(num1 < n1){
+        while(num1 < n1 - num2){
             if(arr1[num1] == arr2[0]){
                 for(num2 = 1; num2 < n2; num2++){
                     if(arr1[num1 + num2] != arr2[num2]){
