@@ -10,7 +10,7 @@ public class Main {
         }else if(d==31){
             if(m%2 == 1&& m < 8){
                 return true;
-            }else if(m%2 == 0&& m < 13&& m < 7){
+            }else if(m%2 == 0&& m < 13&& m > 7){
                 return true;
             }
         }
