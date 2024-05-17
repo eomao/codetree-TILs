@@ -6,6 +6,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int mark = 0, max = 1;
+        String maxnum = "";
         StringTokenizer st = new StringTokenizer(br.readLine());
         int[] arr = new int[n];
         for(int i = 0; i < n; i++){
@@ -20,10 +21,11 @@ public class Main {
                 }
 
             }
-            System.out.print(mark+1+" ");
+            maxnum += (mark+1)+" ";
             n = mark;
             max = 1;
         }
+        System.out.print(maxnum);
 
 
 
