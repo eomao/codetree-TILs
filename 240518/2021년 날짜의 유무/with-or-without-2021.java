@@ -5,7 +5,7 @@ public class Main {
     static boolean year(int m, int d){
         if(m < 13&& d < 29){
             return true;
-        }else if(d < 31&& m!= 2){
+        }else if(d < 31&& m!= 2&&m <13){
             return true;
         }else if(d==31){
             if(m%2 == 1&& m < 8){
