@@ -3,7 +3,7 @@ import java.io.*;
 public class Main{
     static boolean checkNum(int num1, int num2, int[] array1, int[] array2){
         int cnt = 0;
-        while(cnt < num1- num2){
+        while(cnt <= num1- num2){
             if(array1[cnt] == array2[0]){
                 for(int i = 1; i < num2; i++){
                     if(array1[cnt+i] != array2[i]){
