@@ -10,10 +10,8 @@ public class Main {
             return false;
         }else if(year%4 == 0){
             return true;
-        }else{
-            return false;
         }
-
+        return false;
     }
 
     static boolean exist(int year, int month, int day){
@@ -23,34 +21,24 @@ public class Main {
                     if(day < 30){
                         return true;
                     }
-                    return false;
-
                 }else if(month%2 == 0){
                     if(month >= 8){
                         if(day < 32){
                             return true;
-                        }else{
-                            return false;
                         }
                     }else{
                         if(day < 31){
                             return true;
-                        }else{
-                            return false;
                         }
                     }
                 }else{
                     if(month <= 8){
                         if(day < 32){
                             return true;
-                        }else{
-                            return false;
                         }
                     }else{
                         if(day < 31){
                             return true;
-                        }else{
-                            return false;
                         }
                     }
                 }
@@ -58,38 +46,28 @@ public class Main {
         }else{
             if(month >= 1&& month <= 12){
                 if(month == 2){
-                    if(day < 30){
+                    if(day < 29){
                         return true;
                     }
-                    return false;
-
                 }else if(month%2 == 0){
                     if(month >= 8){
                         if(day < 32){
                             return true;
-                        }else{
-                            return false;
                         }
                     }else{
                         if(day < 31){
                             return true;
-                        }else{
-                            return false;
                         }
                     }
                 }else{
                     if(month <= 8){
                         if(day < 32){
                             return true;
-                        }else{
-                            return false;
                         }
                     }else{
                         if(day < 31){
                             return true;
-                        }else{
-                            return false;
-                        }
+                        }  
                     }
                 }
             }
