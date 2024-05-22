@@ -18,7 +18,7 @@ public class Main {
         row = 1;
         int col1 = m-1;
         for(int i = n-1; i > 0; i--){
-            for(int j = 0; j < i&&j <=m-1; j++){
+            for(int j = 0; j < i&&j <m-1; j++){
                 arr[row+j][col1-j] = cnt;
                 cnt++;
             }
@@ -26,7 +26,7 @@ public class Main {
         }
 
         for(int row1 = 0; row1 < n; row1 ++){
-            for(int col = 0; col < n; col++){
+            for(int col = 0; col < m; col++){
                 System.out.print(arr[row1][col]+" ");
             }
             System.out.println();
