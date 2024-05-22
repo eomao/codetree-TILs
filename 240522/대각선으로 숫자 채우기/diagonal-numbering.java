@@ -18,7 +18,7 @@ public class Main {
         row = 1;
         int col1 = m-1;
         for(int i = n-1; i > 0; i--){
-            for(int j = 0; j < i; j++){
+            for(int j = 0; j < i&&j <m-1; j++){
                 arr[row+j][col1-j] = cnt;
                 cnt++;
             }
