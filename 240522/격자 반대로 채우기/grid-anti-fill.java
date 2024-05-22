@@ -7,16 +7,31 @@ public class Main {
         int cnt = 1;
         int[][] arr = new int[n][n];
         for(int col = n-1; col >= 0; col--){
-            if(col%2 == 1){
-                for(int row = n-1; row >= 0; row--){
-                    arr[row][col] = cnt;
-                    cnt++;
+            if(n%2 == 0){
+                if(col%2 == 1){
+                    for(int row = n-1; row >= 0; row--){
+                        arr[row][col] = cnt;
+                        cnt++;
+                    }
+                }else{
+                    for(int row = 0; row < n; row++){
+                        arr[row][col] = cnt;
+                        cnt++;
+                    }
                 }
             }else{
-                for(int row = 0; row < n; row++){
-                    arr[row][col] = cnt;
-                    cnt++;
+                if(col%2 == 0){
+                    for(int row = n-1; row >= 0; row--){
+                        arr[row][col] = cnt;
+                        cnt++;
+                    }
+                }else{
+                    for(int row = 0; row < n; row++){
+                        arr[row][col] = cnt;
+                        cnt++;
+                    }
                 }
+
             }
         }
 
