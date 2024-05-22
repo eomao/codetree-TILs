@@ -10,7 +10,7 @@ public class Main {
         int row = 0;
 
         for(int col = 0; col < m; col++){
-            for(int i = 0; i <= col; i++){
+            for(int i = 0; i <= col&& i< n; i++){
                arr[row+i][col-i] = cnt;
                cnt++; 
             }
