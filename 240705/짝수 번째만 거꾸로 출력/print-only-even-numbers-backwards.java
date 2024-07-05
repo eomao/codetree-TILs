@@ -6,14 +6,9 @@ public class Main {
         String line = sc.next();
 
         for(int i = line.length()-1; i > 0; i--){
-            if(line.length()%2 == 0){
                 if(i%2 == 1){
                     System.out.print(line.charAt(i));
-                }
-            }else{
-                if(i%2 == 0){
-                    System.out.print(line.charAt(i));
-                }
+      
             }
         }
     }
