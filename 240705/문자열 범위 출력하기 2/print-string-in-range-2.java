@@ -11,7 +11,7 @@ public class Main {
                 System.out.print(word.charAt(word.length()-i));
             }
         }else{
-            for(int i = 1; i <= num; i++){
+            for(int i = 1; i <= word.length(); i++){
                 System.out.print(word.charAt(word.length()-i));
             }
         }
