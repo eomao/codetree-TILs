@@ -21,7 +21,7 @@ public class Main {
             }
             System.out.println();
             cnt++;
-            if(cnt*5 > line.length())
+            if(cnt*5 >= line.length())
             break;
         }
     }
