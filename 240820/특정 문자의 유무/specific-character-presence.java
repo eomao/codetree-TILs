@@ -8,7 +8,9 @@ public class Main {
 
         for(int i = 0; i < line.length(); i++){
             if(line.charAt(i)== 'e'){
-                
+                if(i + 1 == line.length()){
+                    break;
+                }
                 if(line.charAt(i+1) == 'e'){
                     inc1 = true;
                 }
@@ -16,12 +18,25 @@ public class Main {
         }
         for(int i = 0; i < line.length(); i++){
             if(line.charAt(i) == 'a'){
+                if(i+1 == line.length()){
+                    break;
+                }
                 if(line.charAt(i+1) == 'b'){
                     inc2 = true;
                 }
             }
         }
-        System.out.print(inc1+" "+inc2);
+        if(inc1){
+            System.out.print("Yes");
+        }else{
+            System.out.print("No");
+        }
+        System.out.print(" ");
+        if(inc2){
+            System.out.print("Yes");
+        }else{
+            System.out.print("No");
+        }
 
 
     }
