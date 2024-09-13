@@ -6,7 +6,7 @@ public class Main {
         int mark = -1;
         String line = sc.next();
         String tag = sc.next();
-        for(int i = 0; i < line.length()-1; i++){
+        for(int i = 0; i < line.length(); i++){
             if(line.charAt(i)==tag.charAt(0)){
                 for(int j = 0; j < tag.length(); j++){
                     if(line.charAt(i+j)!=tag.charAt(j)){
