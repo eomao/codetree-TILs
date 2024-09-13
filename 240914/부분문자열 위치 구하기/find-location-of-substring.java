@@ -7,9 +7,14 @@ public class Main {
         String line = sc.next();
         String tag = sc.next();
         for(int i = 0; i < line.length()-1; i++){
-            if(line.charAt(i)==tag.charAt(0)&&line.charAt(i+1)==tag.charAt(1)){
-                mark = i;
-                break;
+            if(line.charAt(i)==tag.charAt(0)){
+                for(int j = 1; j < tag.length(); j++){
+                    if(line.charAt(i+j)!=tag.charAt(j)){
+                        break;
+                    }else if(j==tag.length()-1){
+                        mark = i;
+                    }
+                }
             }
         }
         System.out.println(mark);
