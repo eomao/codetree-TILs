@@ -7,7 +7,7 @@ public class Main {
         String line = sc.next();
         String tag = sc.next();
         for(int i = 0; i < line.length(); i++){
-            if(line.charAt(i)==tag.charAt(0)){
+            if(line.charAt(i)==tag.charAt(0)&&i+tag.length()<line.length()){
                 for(int j = 0; j < tag.length(); j++){
                     if(line.charAt(i+j)!=tag.charAt(j)){
                         break;
