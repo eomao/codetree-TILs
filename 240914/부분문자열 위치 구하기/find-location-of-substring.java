@@ -20,7 +20,7 @@ public class Main {
                 }
             }
         }
-        if(line.equals(tag)){
+        if(line.equals(tag+" ")){
             mark = -1;
         }
         System.out.println(mark);
