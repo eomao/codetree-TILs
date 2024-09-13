@@ -6,6 +6,10 @@ public class Main {
         int mark = -1;
         String line = sc.next();
         String tag = sc.next();
+        if (line.equals(tag)) {
+            System.out.println(-1);
+            return; // 프로그램 종료
+        }
         for(int i = 0; i < line.length(); i++){
             if(line.charAt(i)==tag.charAt(0)&&i+tag.length()<line.length()){
                 for(int j = 0; j < tag.length(); j++){
@@ -19,9 +23,6 @@ public class Main {
                     break;
                 }
             }
-        }
-        if(line.equals(tag+" ")){
-            mark = -1;
         }
         System.out.println(mark);
     }
