@@ -15,6 +15,9 @@ public class Main {
                         mark = i;
                     }
                 }
+                if(mark != -1){
+                    break;
+                }
             }
         }
         System.out.println(mark);
