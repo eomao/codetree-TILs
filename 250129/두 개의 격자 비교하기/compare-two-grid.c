@@ -6,18 +6,18 @@ int main() {
     int a[n*m], b[n*m], num[n*m];
     for(int row = 0; row < n; row++){
         for(int col = 0; col < m; col++){
-            scanf("%d", &a[row*4 + col]);
+            scanf("%d", &a[row*m + col]);
         }
     }
     for(int row = 0; row < n; row++){
         for(int col = 0; col < m; col++){
-            scanf("%d", &b[row*4 + col]);
+            scanf("%d", &b[row*m + col]);
         }
     }
     for(int row = 0; row < n; row++){
         for(int col = 0; col < m; col++){
-            num[row*4 + col] = !(a[row*4 + col]==b[row*4 + col]);
-            printf("%d ", num[row*4 + col]);
+            num[row*m + col] = !(a[row*m + col]==b[row*m + col]);
+            printf("%d ", num[row*m + col]);
         }
         printf("\n");
     }
