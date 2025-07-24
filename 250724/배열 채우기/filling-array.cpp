@@ -4,11 +4,11 @@ using namespace std;
 int main() {
     // Please write your code here.
     int arr[11];
-    int mark = 10, i;
+    int mark = 9, i;
     for(i = 0; i < 10; i++){
         scanf("%d", &arr[i]);
         if(arr[i] == 0){
-            mark = i-2;
+            mark = i-1;
             break;
         }
     }
